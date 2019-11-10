@@ -1,28 +1,33 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
 
+html {
+  box-sizing: border-box;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2 {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .paticka {
-    text-align: center;
-    font-size: 14px;
-    color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-    color: silver;
+  color: silver;
 }
 
 /* -------------------------------------------------- */
@@ -40,3 +45,145 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+body {
+  color: white;
+}
+
+.hlavni-recept {
+  background-image: url(images/burger.jpg);
+  background-size: cover;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recept2 {
+  background-image: url(images/sushi.jpg);
+  background-size: cover;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recept3 {
+  background-image: url(images/rajcata.jpg);
+  background-size: cover;
+  min-height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recept4 {
+  background-image: url(images/kure.jpg);
+  background-size: cover;
+  min-height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recept5 {
+  background-image: url(images/grilovani.jpg);
+  background-size: cover;
+  min-height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hlavni-recept, .recept {
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px
+}
+
+.recept-meta {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.hlavni-recept h2 {
+  font-size: 28px;
+  font-weight: 800px;
+}
+
+.recept h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.recept-komentare {
+  float: right;
+}
+
+@media (min-width: 480px) {
+  .doporucujeme {
+    display: flex;
+    flex-direction: column;
+  }
+  .hlavni-recept {
+    flex: 1 1 100%;
+    min-height: 250px;
+  }
+  .sloupec {
+    display: flex;
+  }
+  .recept {
+    flex: 50%;
+    min-height: 150px
+  }
+}
+
+.hlavni-recept h2 {
+  font-size: 36px;
+}
+
+.recept h2 {
+  font-size: 22px;
+}
+
+.hlavni-recept, .recept {
+  padding: 20px;
+}
+
+@media (min-width: 860px) {
+  .doporucujeme {
+    display: flex;
+    flex-direction: row;
+  }
+  .hlavni-recept, .sloupec {
+    flex: calc(100% / 3);
+  }
+  .sloupec {
+    display: flex;
+    flex-direction: column;
+  }
+  .recept {
+    flex: 50%;
+    min-height: 200px;
+  }
+}
+
+.hlavni-recept {
+  min-height: 400px;
+}
+
+.hlavni-recept h2 {
+  font-size: 48px;
+}
+
+.recept h2 {
+  font-size: 28px;
+}
+
+.hlavni-recept, .recept {
+  padding: 20px;
+}
